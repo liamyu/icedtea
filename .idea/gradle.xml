@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/aosp" />
+            <option value="$PROJECT_DIR$/api-annotation" />
+            <option value="$PROJECT_DIR$/api-annotation-processor" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bottomnavigation" />
+            <option value="$PROJECT_DIR$/coordinatorlayout" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/fullscreen" />
+            <option value="$PROJECT_DIR$/leetcode" />
+            <option value="$PROJECT_DIR$/pilot" />
+            <option value="$PROJECT_DIR$/tablayout" />
+            <option value="$PROJECT_DIR$/tbs" />
+            <option value="$PROJECT_DIR$/toolbar" />
+            <option value="$PROJECT_DIR$/viewflipper" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

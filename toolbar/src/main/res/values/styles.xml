@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="NoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="actionModeBackground">@color/colorPrimary</item>
+    <item name="actionMenuTextColor">@android:color/white</item>
+    <item name="windowActionBar">false</item>
+    <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="p">
+      shortEdges <!-- default, shortEdges, never -->
+    </item>
+  </style>
+
+  <style name="NoActionBarTheme.PrimaryWhite">
+    <item name="colorPrimary">@android:color/white</item>
+    <item name="colorPrimaryDark">@android:color/white</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+    <item name="android:fitsSystemWindows">true</item>
+    <item name="actionMenuTextColor">@android:color/black</item>
+  </style>
+
+  <style name="WhiteToolbarStyle">
+    <item name="android:background">@android:color/white</item>
+    <item name="android:theme">@style/LightToolbarTheme</item>
+  </style>
+
+  <style name="LightToolbarTheme">
+    <!-- Color used for the title of the Toolbar - as long as not overridden -->
+    <item name="android:textColorPrimary">@android:color/black</item>
+    <!-- Used to color back button and three dots -->
+    <item name="android:textColorSecondary">@android:color/black</item>
+  </style>
+
+  <!--<style name="Base_ToolbarStyle">-->
+    <!--<item name="popupTheme">@style/ThemeOverlay.AppCompat.Dark</item>-->
+    <!--<item name="android:background">#000</item>-->
+    <!--&lt;!&ndash;<item name="android:theme">@style/Base_ToolbarTheme</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="titleTextAppearance">@style/CustomTitleTextAppearance</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;<item name="subtitleTextAppearance">@style/CustomSubTitleTextAppearance</item>&ndash;&gt;-->
+  <!--</style>-->
+
+  <style name="Base_ToolbarTheme">
+    <!-- Color used for the title of the Toolbar - as long as not overridden -->
+    <item name="android:textColorPrimary">#f00</item>
+    <!-- Used to color back button and three dots -->
+    <item name="android:textColorSecondary">#0f0</item>
+  </style>
+
+  <!--<style name="BlackMenu" parent="@android:style/TextAppearance.Small">-->
+    <!--<item name="android:textColor">#f00</item>-->
+  <!--</style>-->
+
+  <!--<style name="CustomTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">-->
+    <!--<item name="android:fontFamily">@string/ff_roboto_condensed</item>-->
+    <!--<item name="android:textSize">16sp</item>-->
+    <!--<item name="android:textColor">@color/amber_500_primary</item>-->
+    <!--<item name="android:textStyle">bold</item>-->
+  <!--</style>-->
+
+  <!--<style name="CustomSubTitleTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">-->
+    <!--<item name="android:fontFamily">@string/ff_roboto_condensed</item>-->
+    <!--<item name="android:textSize">14sp</item>-->
+    <!--<item name="android:textColor">@color/pink_500_primary</item>-->
+    <!--<item name="android:textStyle">italic</item>-->
+  <!--</style>-->
+
+</resources>

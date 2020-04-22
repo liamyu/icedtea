@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.0'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+
