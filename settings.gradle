@@ -1,2 +1,3 @@
+include ':umeng'
 include ':app', ':pilot', ':fullscreen', ':feature', ':toolbar', ':leetcode', ':aosp', ':tbs', ':api-annotation', ':viewflipper', ':coordinatorlayout', ':bottomnavigation', ':tablayout',
         ':api-annotation-processor'
