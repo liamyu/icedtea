@@ -57,12 +57,25 @@ class CoroutineUnitTest {
         println("IO: ${Thread.currentThread()}")
       }
       println("Main 2: ${Thread.currentThread()}")
-    }.join()
+    }
     println("Main: ${Thread.currentThread()}")
   }
 
   @Test
   fun blockMain_isCorrect2() = runBlocking {
+    println("Main 1: ${Thread.currentThread()}")
+    CoroutineScope(IO).launch {
+      delay(5000)
+      println("IO: ${Thread.currentThread()}")
+      withContext(Main) {
+        println("Main 2: ${Thread.currentThread()}")
+      }
+    }
+    println("Main: ${Thread.currentThread()}")
+  }
+
+  @Test
+  fun blockMain_isCorrect3() = runBlocking {
     println("Main 1: ${Thread.currentThread()}")
     CoroutineScope(IO).launch {
       delay(5000)
