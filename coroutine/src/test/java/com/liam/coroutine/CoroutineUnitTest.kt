@@ -89,6 +89,22 @@ class CoroutineUnitTest {
   }
 
   @Test
+  fun sequential_execute_isCorrect() = runBlocking {
+    CoroutineScope(IO).launch {
+      for (i in 1..5) {
+        withContext(IO) {
+          println("withContext IO: ${Thread.currentThread()} i = $i")
+        }
+      }
+      for (i in 1..5) {
+        launch {
+          println("just launch in IO: ${Thread.currentThread()}")
+        }
+      }
+    }.join()
+  }
+
+  @Test
   fun delay_isCorrect() = runBlocking {
     launch {
       delay(2000)
