@@ -34,7 +34,7 @@ class CoroutineUnitTest {
         println("IO: ${Thread.currentThread()}")
       }
     }
-  }
+  }+
 
   /**
    * With runBlocking.
@@ -111,6 +111,13 @@ class CoroutineUnitTest {
       println("after delay")
     }
     println("Main: ${Thread.currentThread()}")
+  }
+
+  @Test
+  fun step_isCorrect() {
+    for(i in 3..10 step 2) {
+      println(i)
+    }
   }
 
   @ExperimentalCoroutinesApi
