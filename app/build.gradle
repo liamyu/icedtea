@@ -2,7 +2,8 @@ apply plugin: 'com.android.application'
 //apply plugin: 'kotlin-android'
 //apply plugin: 'kotlin-android-extensions'
 //apply plugin: 'kotlin-kapt'
-apply plugin: 'asm-plugin'
+//apply plugin: 'asm-plugin'
+//apply plugin: 'io.github.liamyu.greeting'
 
 android {
     compileSdkVersion 29
