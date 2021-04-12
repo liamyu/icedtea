@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.7">
+      <module name="icedtea.aosp" target="12" />
+      <module name="icedtea.api-annotation" target="1.8" />
+      <module name="icedtea.api-annotation-processor" target="1.8" />
+      <module name="icedtea.app" target="12" />
+      <module name="icedtea.bottomnavigation" target="12" />
+      <module name="icedtea.coordinatorlayout" target="12" />
+      <module name="icedtea.coroutine" target="12" />
+      <module name="icedtea.feature" target="12" />
+      <module name="icedtea.fullscreen" target="12" />
+      <module name="icedtea.pilot" target="12" />
+      <module name="icedtea.tablayout" target="12" />
+      <module name="icedtea.tbs" target="12" />
+      <module name="icedtea.toolbar" target="12" />
+      <module name="icedtea.umeng" target="12" />
+      <module name="icedtea.viewflipper" target="12" />
       <module name="leetcode" target="1.7" />
     </bytecodeTargetLevel>
   </component>
