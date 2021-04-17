@@ -2,12 +2,16 @@ package com.liam.algorithms.sort;
 
 import java.util.Arrays;
 
+/**
+ * 选择排序.
+ */
 public class Selection {
 
   public static void sort(Comparable[] a) {
-    for (int i = 0; i < a.length; i++) {
+    int n = a.length;
+    for (int i = 0; i < n; i++) {
       int min = i;
-      for (int j = i + 1; j < a.length; j++) {
+      for (int j = i + 1; j < n; j++) {
         if (less(a[j], a[min])) {
           min = j;
         }
