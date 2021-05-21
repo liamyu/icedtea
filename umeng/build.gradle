@@ -24,16 +24,20 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "androidx.appcompat:appcompat:$app_compat_version"
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     // https://developer.umeng.com/docs/119267/detail/118584
-    api 'com.umeng.umsdk:common:9.1.6' // (必选)
-    api  'com.umeng.umsdk:asms:1.1.3' // asms包依赖(必选)
-    api 'com.umeng.umsdk:crash:0.0.5' // native crash包依赖(必选)
+    // 友盟统计SDK
+    api 'com.umeng.umsdk:common:9.3.8' // 必选
+    api 'com.umeng.umsdk:asms:1.2.2' // 必选
+
+    //可选集成，对应产品中稳定性模块（错误捕获），该功能已经独立成为新的应用性能监控产品U-APM
+    api 'com.umeng.umsdk:apm:1.2.0'
+
     implementation  'com.umeng.umsdk:oaid_lenovo:1.0.0' // (可选)
     implementation  'com.umeng.umsdk:oaid_mi:1.0.0' // (可选)
     implementation  'com.umeng.umsdk:oaid_oppo:1.0.4' // (可选)

@@ -1,5 +1,5 @@
 apply plugin: 'groovy'
-apply plugin: 'maven'
+//apply plugin: 'maven'
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
@@ -12,13 +12,13 @@ group='io.github.liamyu'
 version='0.0.1'
 
 // https://stackoverflow.com/questions/25233518/use-gradle-to-upload-jar-to-local-maven-repository
-install {
-    repositories.mavenInstaller {
-        // only necessary if artifact ID diverges from project name
-        // the latter defaults to project directory name and can be
-        // configured in settings.gradle
-        pom.artifactId = 'asm-plugin'
-        // shouldn't be needed as this is the default anyway
-        pom.packaging = 'jar'
-    }
-}
+//install {
+//    repositories.mavenInstaller {
+//        // only necessary if artifact ID diverges from project name
+//        // the latter defaults to project directory name and can be
+//        // configured in settings.gradle
+//        pom.artifactId = 'asm-plugin'
+//        // shouldn't be needed as this is the default anyway
+//        pom.packaging = 'jar'
+//    }
+//}
