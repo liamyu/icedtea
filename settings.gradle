@@ -5,3 +5,4 @@ include ':app', ':pilot', ':fullscreen', ':feature', ':toolbar', ':leetcode', ':
         ':api-annotation-processor'
 include ':compose'
 include ':aar'
+include ':snaphelper'

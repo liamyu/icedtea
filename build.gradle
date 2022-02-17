@@ -1,6 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext.kotlin_version = '1.6.20-M1'
     ext {
         compose_version = '1.0.0'
         core_ktx_version = '1.6.0'
