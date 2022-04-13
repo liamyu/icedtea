@@ -12,11 +12,12 @@
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
     <activity
-      android:label="@string/title_activity_main"
-      android:name=".components.main.MainActivity">
+      android:name=".components.main.MainActivity"
+      android:exported="true"
+      android:label="@string/title_activity_main">
       <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
-        <category android:name="android.intent.category.LAUNCHER"/> <!--TODO: What about other category?-->
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" /> <!--TODO: What about other category?-->
       </intent-filter>
     </activity>
   </application>

@@ -6,11 +6,11 @@ apply plugin: 'com.android.application'
 //apply plugin: 'io.github.liamyu.greeting'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 31
     defaultConfig {
         applicationId "com.liam.icedtea"
-        minSdkVersion 19
-        targetSdkVersion 29
+        minSdkVersion 21
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -43,7 +43,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-//    implementation project(':api-annotation')
+    implementation project(':aar')
 //    annotationProcessor project(':api-annotation-processor')
 //    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
 //    compile "androidx.core:core-ktx:+"
